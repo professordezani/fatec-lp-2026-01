@@ -2,3 +2,12 @@
 # Se for um e-mail, retorne "E-mail válido", caso contrário,
 # retorne "E-mail inválido". Para tanto, verifique se o texto
 # possui o símbolo @
+
+email = input('Digite um e-mail: ')
+
+for letra in email:
+    if letra == '@':
+        print('E-mail válido.')
+        break
+else:
+    print('E-mail inválido.')
