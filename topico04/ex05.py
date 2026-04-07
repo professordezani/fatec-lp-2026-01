@@ -5,4 +5,14 @@
 # exemplo, se na lista tivermos dois "José", após o
 # processamento a lista deverá conter "José 1" e "José 2".
 
-# nomes = ['Maria', 'Pedro', 'Maria', 'João', 'Pedro']
+nomes = ['Maria', 'Pedro', 'Maria', 'João', 'Pedro']
+
+for nome in nomes:
+    if nomes.count(nome) > 1:
+        count = 1
+        for i, n in enumerate(nomes):
+            if nome == n:
+                nomes[i] = f'{nome} {count}'
+                count+=1
+
+print(nomes)
