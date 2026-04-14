@@ -8,3 +8,13 @@
 
 x = {1, 2, 3}
 y = {3, 4, 5}
+
+# união
+a = x | y
+print(a)
+
+# diferença
+print(x - y)
+
+# interseção
+print(x & y)
